@@ -13,9 +13,9 @@ export class TravelController {
   }
 
   @Get()
-  findAll() {
-    return this.travelService.findAll();
-  }
+findAll() {
+  return this.travelService.findAll();
+}
 
   @Get(':id')
   findOne(@Param('id') id: string) {
