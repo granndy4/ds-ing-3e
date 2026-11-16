@@ -18,9 +18,9 @@ findAll() {
 }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.travelService.findOne(+id);
-  }
+findOne(@Param('id') id: string) {
+  return this.travelService.findOne(+id);
+}
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateTravelDto: UpdateTravelDto) {
